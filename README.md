@@ -23,7 +23,7 @@ conda env create -f environment.yml
 
 **example-model-prediction.ipynb** An ensemble model composed of 15 GraphDPA was used to predict example data.
 
-##Folder/file description
+## Folder/file description
 
 **codes** contains code for the GraphDPA model and utils.
 
