@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -12,16 +6,10 @@ from torch.nn import Linear, Embedding
 from torch_geometric.nn import GATConv, GCNConv, GATv2Conv, TransformerConv
 
 
-# In[ ]:
-
-
 def global_select_concat(feature, batch, x):
     feature = feature[x==-1]
     batch_size = batch[-1].item() + 1
     return feature.view(batch_size, -1)
-
-
-# In[ ]:
 
 
 class GCN_Model(torch.nn.Module):
